@@ -1,0 +1,44 @@
+.main_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+ .header {
+   display:  flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0;
+   border-bottom: 1px solid #000;
+   .logo {
+     font-style: normal;
+     font-weight: 900;
+     font-size: 28px;
+     line-height: 36px;
+   }
+   .right_header {
+      .header_item {
+        font-family: Neue Haas Unica;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        margin-right: 40px;
+      }
+     & .header_item:last-child {
+       margin-right: 0;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 22px;
+       letter-spacing: 0.04em;
+       text-transform: uppercase;
+       color: #FFFFFF;
+       background: #F9423A;
+       border-radius: 100px;
+       cursor: pointer;
+       padding: 10px 20px;
+     }
+   }
+ }
+}
