@@ -1,0 +1,95 @@
+.main_form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  .double {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 28px;
+  }
+  .subscribe__form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 56px;
+    width: 100%;
+    justify-content: flex-end;
+    .placeholder {
+      font-family: Neue Haas Unica R;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #525252;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      transition: .3s;
+      z-index: 1;
+    }
+    input,
+    textarea {
+      border: none;
+      background-color: transparent;
+      border-bottom: 1px solid #E0E0E0;
+      font-family: Neue Haas Unica R;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.001em;
+      color: #000000;
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+      min-height: 56px;
+    }
+    textarea {
+      resize: none;
+    }
+  }
+  & .subscribe__form:first-child {
+    margin-right: 24px;
+  }
+  .textarea {
+    min-height: 126px!important;
+    margin-bottom: 32px;
+    .placeholder {
+      top: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 100%;
+      padding-top: 12px;
+    }
+  }
+  .form_btn {
+    font-family: Neue Haas Unica;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    background: #F9423A;
+    border-radius: 100px;
+    border: none;
+    max-width: 162px;
+    margin-right: auto;
+    cursor: pointer;
+  }
+}
+.form_title {
+    font-family: Neue Machina Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.001em;
+    color: #000000;
+    span {
+      color:  #F9423A;
+    }
+}

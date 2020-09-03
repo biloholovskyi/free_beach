@@ -1,9 +1,10 @@
 import 'normalize.css';
 import {inputForm} from "./input";
+import  scrolled from "./scrolled";
 
 
 $(document).ready(() => {
-    $('input').on('input', inputForm);
+    $('input, textarea').on('input', inputForm);
 });
 
 $(window).resize(function () {

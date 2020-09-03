@@ -1,0 +1,27 @@
+.category-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  h1 {
+    font-family: Neue Machina Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.001em;
+    color: #000000;
+    margin-bottom: 4px;
+  }
+  .cat-desc {
+    display: flex;
+    p {
+      font-family: Neue Haas Unica;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.001em;
+      color: #525252;
+    }
+  }
+}
