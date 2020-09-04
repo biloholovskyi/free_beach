@@ -1,0 +1,192 @@
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  width: 100%;
+  .category_item {
+    min-width: 190px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Neue Haas Unica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #000000;
+    position: relative;
+    &:after {
+      content: "/";
+      position: absolute;
+      color: #E5E5E5;
+      right: 0;
+
+    }
+  }
+  & .category_item:last-child:after {
+    display: none;
+  }
+  & .category_item.active {
+    color: #F9423A;
+  }
+}
+.filter {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  h4 {
+    font-family: Neue Haas Unica R;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.005em;
+    color: #525252;
+    margin-right: 12px;
+  }
+  button {
+    font-family: Neue Haas Unica R;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.005em;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    img {
+      width: 8px;
+      height: 8px;
+      object-fit: contain;
+      object-position: center;
+      margin-left: 9px;
+      transition: .3s;
+    }
+
+    & img.active {
+      transform: rotate(180deg);
+    }
+  }
+}
+.main,
+.main-video{
+  width: 100%;
+  height: 100%;
+  max-height: 518px;
+  //margin-bottom: 27px;
+  position: relative;
+  .news-img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+  .news-item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 426px;
+    min-height: 176px;
+    background-color: white;
+    padding-top: 28px;
+    padding-right: 28px;
+    .category-name {
+      font-family: 'Neue Haas Unica';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #F9423A;
+      margin-bottom: 12px;
+    }
+    .category-title {
+      font-family: 'Neue Machina Bold';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 28px;
+      color: #000000;
+      margin-bottom: 12px;
+    }
+    .cat-date {
+      font-family: 'Neue Haas Unica';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #525252;
+    }
+  }
+}
+.video-wrapp {
+  .news-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 18px;
+    .category-title,
+    .category-name,
+    .cat-date {
+      color: #fff;
+    }
+    .category-name {
+      margin-bottom: 12px;
+    }
+    .category-title {
+      margin-bottom: 0;
+    }
+    a {
+      background-color:  rgba(0, 0, 0, 0.8);
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 40px 0;
+      img {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+}
+.small-item {
+  max-width: 327px!important;
+}
+
+.btn-wrapp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 56px 0 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #000000;
+  .more {
+    font-family: Neue Haas Unica;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 15px 32px;
+    border: 1px solid #E0E0E0;
+    border-radius: 100px;
+    background-color: transparent;
+    max-width: 240px;
+  }
+}
+.news_col {
+  margin-bottom: 28px;
+}

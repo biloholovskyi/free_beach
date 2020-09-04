@@ -1,0 +1,38 @@
+@media screen and (max-width: 320px) {
+   .main {
+     .news-item {
+       padding: 5px 5px 0 0;
+       max-width: 100%;
+     }
+   }
+  .category-title {
+    .cat-desc  {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  .news__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .news__social-hidden .date {
+    font-size: 14px;
+  }
+  .subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .news__par {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  #player {
+    min-height: 288px;
+  }
+  .wrap {
+    min-height: 288px;
+  }
+}
