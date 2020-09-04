@@ -31,7 +31,7 @@ gulp.task('default', function() {
         baseDir: "./app"
     }
 });
-    gulp.watch("app/sass/**/*.scss", function () {
+    gulp.watch("app/wp-content/themes/free_beach/sass/**/*.scss", function () {
         return gulp.src("app/sass/**/*.scss")
           .pipe(sass())
           .pipe(autoprefixer({
@@ -41,15 +41,15 @@ gulp.task('default', function() {
           .pipe(cleanCSS({
             level: 2
           }))
-          .pipe(gulp.dest("app/css"))
+          .pipe(gulp.dest("app/wp-content/themes/free_beach/css"))
           .pipe(browserSync.stream());
     });
-    gulp.watch("app/js/**/*.js", function () {
-      return gulp.src("app/js/index.js")
+    gulp.watch("app/wp-content/themes/free_beach/js/**/*.js", function () {
+      return gulp.src("app/wp-content/themes/free_beach/js/index.js")
         .pipe(webpack(webConfig))
-        .pipe(gulp.dest("app/buildjs"))
+        .pipe(gulp.dest("app/wp-content/themes/free_beach/buildjs"))
         .pipe(browserSync.stream());
     });
-    gulp.watch("app/**/*.php").on('change', browserSync.reload);
-    gulp.watch("app/**/*.html").on('change', browserSync.reload);
+    gulp.watch("app/wp-content/themes/free_beach/**/*.php").on('change', browserSync.reload);
+    gulp.watch("app/wp-content/themes/free_beach/**/*.html").on('change', browserSync.reload);
 });
