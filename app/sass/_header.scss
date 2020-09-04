@@ -53,3 +53,10 @@
   width: 100%;
   min-height: 80px;
 }
+.burger {
+  width: 24px;
+  height: 24px;
+  object-position: center;
+  object-fit: contain;
+  display: none;
+}

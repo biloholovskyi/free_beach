@@ -1,3 +1,111 @@
 @media screen and (max-width: 767px) {
-
+  .main_header {
+    .header {
+      .right_header {
+        .header_item {
+          display: none;
+        }
+      }
+      .burger {
+        display: block;
+      }
+    }
+  }
+  .main {
+    .news-item {
+      padding: 10px 10px 0 0;
+      max-width: 250px!important;
+      min-height: 168px;
+      .category-title {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+  .video-wrapp {
+    .news-item {
+      padding: 0 10px 0;
+      max-width: 100%!important;
+    }
+  }
+  .form_title {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 32px;
+  }
+  .footer {
+    padding: 24px 0;
+    h2 {
+      padding-bottom: 50px;
+    }
+    .footer__items {
+      .footer_navigation {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        .top {
+          flex-wrap: wrap;
+          a {
+            font-size: 14px;
+          }
+        }
+        .bottom {
+          display: none;
+        }
+      }
+    }
+  }
+  .hidden {
+    font-family: Neue Haas Unica R;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    margin: 32px 0 24px;
+  }
+  .news__title {
+    margin-bottom: 24px;
+  }
+  .news__social-hidden {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+    .social__items {
+      display: flex;
+      a {
+        display: inline-block;
+        margin-right: 16px;
+        img {
+          width: 36px;
+          height: 36px;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+    .date {
+      font-family: Neue Haas Unica;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+    }
+  }
+  .news__social {
+    display: none;
+  }
+  .news__img {
+    min-height: unset;
+  }
+  .news__title-row {
+    margin: 12px 0 0 0!important;
+  }
+  .btn_back {
+    display: block;
+  }
 }

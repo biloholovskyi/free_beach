@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.css'>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-4-grid@3.4.0/css/grid.min.css'>
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
   <link rel="stylesheet" href="css/main.css">
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -22,6 +22,7 @@
               <a class="header_item" href="#">Документация</a>
               <a class="header_item" href="#">Поддержать проект</a>
             </div>
+            <img class="burger" src="media/icon/burger.svg">
           </div>
         </div>
       </div>
@@ -30,7 +31,7 @@
   <div class="fake_header"></div>
   <div class="container" style="border-top: 1px solid #000;">
     <div class="row">
-      <div class="col-9">
+      <div class="col-12 col-lg-9 col-md-12">
         <div class="category">
           <a href="/category.html" class="category_item">#Covid 19</a>
           <a href="#" class="category_item">#Lifestyle</a>
@@ -39,18 +40,18 @@
           <a href="#" class="category_item">#Политика</a>
         </div>
       </div>
-      <div class="col-1"></div>
-      <div class="col-2">
+      <div class="col-1 d-none d-lg-block"></div>
+      <div class="col-12 col-lg-2 col-md-12">
         <div class="filter">
           <h4>Дата:</h4>
-          <button>За все время</button>
+          <button class="btn_filter">За все время <img src="media/icon/arrow.svg"/></button>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-7">
+      <div class="col-12 col-lg-7 col-md-6 col-sm-6 news_col ">
         <div class="main">
           <img class="news-img" src="./media/image/news.png">
           <div class="news-item">
@@ -60,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="col-5">
+      <div class="col-12 col-lg-5 col-md-6 col-sm-6 news_col ">
         <div class="main">
           <img class="news-img" src="./media/image/news1.png">
           <div class="news-item">
@@ -70,20 +71,20 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
           <div class="main video-wrapp">
             <img class="news-img" src="./media/image/news3.png">
             <div class="news-item">
               <div class="category-name">#Культура</div>
               <div class="category-title">Вчерашний потоп рассердил не только вас, но и прокуратуру. Идет проверка</div>
-              <a href="#">
+              <a href="/video_news.html">
                 <img src="media/icon/play.svg">
               </a>
               <div class="cat-date">12 часов назад</div>
             </div>
           </div>
         </div>
-      <div class="col-8">
+      <div class="col-12 col-lg-8 col-md-6 col-sm-6 news_col">
         <div class="main">
           <img class="news-img" src="./media/image/news2.png">
           <div class="news-item">
@@ -93,7 +94,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
         <div class="main">
           <img class="news-img" src="./media/image/news1.png">
           <div class="news-item small-item">
@@ -103,7 +104,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
         <div class="main video-wrapp">
           <img class="news-img" src="./media/image/news4.png">
           <div class="news-item">
@@ -116,7 +117,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
         <div class="main">
           <img class="news-img" src="./media/image/news5.png">
           <div class="news-item">
@@ -126,7 +127,7 @@
           </div>
         </div>
       </div>
-      <div class="col-7">
+      <div class="col-12 col-lg-7 col-md-6 col-sm-6 news_col">
         <div class="main">
           <img class="news-img" src="./media/image/news.png">
           <div class="news-item">
@@ -136,7 +137,7 @@
           </div>
         </div>
       </div>
-      <div class="col-5">
+      <div class="col-12 col-lg-5 col-md-6 col-sm-6 news_col">
         <div class="main">
           <img class="news-img" src="./media/image/news1.png">
           <div class="news-item">
@@ -146,7 +147,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
         <div class="main video-wrapp">
           <img class="news-img" src="./media/image/news3.png">
           <div class="news-item">
@@ -159,7 +160,7 @@
           </div>
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-12 col-lg-8 col-md-6 col-sm-6 news_col">
         <div class="main">
           <img class="news-img" src="./media/image/news2.png">
           <div class="news-item">
@@ -169,7 +170,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
         <div class="main">
           <img class="news-img" src="./media/image/news1.png">
           <div class="news-item small-item">
@@ -179,7 +180,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
         <div class="main video-wrapp">
           <img class="news-img" src="./media/image/news4.png">
           <div class="news-item">
@@ -192,7 +193,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
         <div class="main">
           <img class="news-img" src="./media/image/news5.png">
           <div class="news-item">
@@ -213,11 +214,11 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-6">
-        <p class="form_title">Есть вопросы или<br>предложения?
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+        <p class="form_title">Есть вопросы или<br>предложения?<br>
           <span>Свяжитесь с нами</span></p>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12">
         <form class="main_form">
           <div class="double">
             <div class="subscribe__form input-wrapper">
@@ -231,7 +232,7 @@
           </div>
           <div class="subscribe__form input-wrapper textarea">
             <div class="placeholder textPlacehold">Коментарий</div>
-            <textarea maxlength="383"></textarea>
+            <textarea maxlength="380"></textarea>
           </div>
           <input class="form_btn" type="submit" value="Отправить"/>
         </form>
@@ -241,7 +242,7 @@
   <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-9">
+      <div class="col-12 col-lg-9 col-md-8">
         <div class="footer__items">
           <h2>Свободный пляж</h2>
           <div class="footer_navigation">
@@ -255,7 +256,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-12 col-lg-3 col-md-4">
         <div class="subscribe">
           <h3>Подпишитесь на нашу рассылку</h3>
           <div class="subscribe__form input-wrapper">
@@ -276,13 +277,14 @@
               <img src="./media/icon/insta.svg" alt="icon"/>
             </a>
           </div>
+          <div class="hidden">1998 - 2020 Свободный пляж</div>
         </div>
       </div>
     </div>
   </div>
 </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="buildjs/index.js"></script>
 </html>
 

@@ -91,3 +91,30 @@
         min-height: unset;
     }
 }
+.news__social-hidden {
+    display: none;
+}
+.btn_back {
+    font-family: Neue Haas Unica;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #000000;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    display: none;
+    &:before {
+        content: "";
+        background-image: url("../media/icon/arr_left.svg");
+        background-position: center;
+        background-size: contain;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 0;
+    }
+}

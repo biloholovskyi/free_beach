@@ -56,7 +56,13 @@
         </div>
     </div>
 </div>
-<img class="news__img" src="media/image/news.png" alt="image">
+<div class="wrap">
+    <div id="block">
+        <div id="play" onclick="playVideo()"><img src="media/icon/play.svg"></div>
+        <div  id="pause" onclick="stopVideo()"><img src="media/icon/pause5.svg"></div>
+    </div>
+    <div id="player"></div>
+</div>
 <div class="container" style="margin-bottom: 56px;">
     <div class="row">
         <div class="col-2">
@@ -165,6 +171,41 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="buildjs/index.js"></script>
+<script>
+
+    let tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    let firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    let player;
+    function onYouTubePlayerAPIReady() {
+        player = new YT.Player('player', {
+            height: '100%',
+            width: '100%',
+            videoId: 'Aiay8I5IPB8',
+            playerVars: {
+                'controls': 0,
+                'modestbranding': 0,
+                'rel': 0,
+                'showinfo': 0,
+                'fs': 0,
+                'autoplay': 0
+            }
+        });
+    }
+
+    function playVideo() {
+        player.playVideo();
+        document.getElementById("play").style = 'display:none';
+        document.getElementById("pause").style = 'display:flex';
+    }
+    function stopVideo() {
+        player.stopVideo();
+        document.getElementById("pause").style = 'display:none';
+        document.getElementById("play").style = 'display:flex';
+    }
+</script>
 </html>
 
 
