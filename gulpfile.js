@@ -28,11 +28,11 @@ const webConfig = {
 gulp.task('default', function() {
   browserSync.init({
     server: {
-        baseDir: "./app"
+        baseDir: "./app/wp-content/themes/free_beach"
     }
 });
     gulp.watch("app/wp-content/themes/free_beach/sass/**/*.scss", function () {
-        return gulp.src("app/sass/**/*.scss")
+        return gulp.src("app/wp-content/themes/free_beach/sass/**/*.scss")
           .pipe(sass())
           .pipe(autoprefixer({
             overrideBrowserslist: ['> 0.1%'],
