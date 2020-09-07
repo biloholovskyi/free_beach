@@ -8,7 +8,26 @@
                         <div class="top">
                             <a href="#">О проекте</a>
                             <a href="#">Документация</a>
-                            <a href="#">Поддержать проект</a>
+                          <?php
+                          $args = array(
+                            'numberposts' => -1, // если -1 то выводит все
+                            'orderby' => 'date',
+                            'order' => 'DESC',
+                            'post_type' => 'supports', // тип поста
+                            'suppress_filters' => true,
+                          );
+
+                          $posts = get_posts($args);
+
+                          foreach ($posts as $post) {
+                            setup_postdata($post);
+                            ?>
+                              <a class="header_item" href="<?php the_field('projects'); ?>" target="_blank">Поддержать проект</a>
+                            <?php
+                          }
+                          wp_reset_postdata(); // сброс
+                          ?>
+
                           <?php
                           $args = array(
                             'numberposts' => 1, // если -1 то выводит все
@@ -90,5 +109,40 @@
     let onloadCallback = function () {
         alert("grecaptcha is ready!");
     };
+</script>
+<script>
+
+    let tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    let firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    let player;
+    function onYouTubePlayerAPIReady() {
+        player = new YT.Player('player', {
+            height: '100%',
+            width: '100%',
+            videoId: '<?php the_field('video_link'); ?>',
+            playerVars: {
+                'controls': 0,
+                'modestbranding': 0,
+                'rel': 0,
+                'showinfo': 0,
+                'fs': 0,
+                'autoplay': 0
+            }
+        });
+    }
+
+    function playVideo() {
+        player.playVideo();
+        document.getElementById("play").style = 'display:none';
+        document.getElementById("pause").style = 'display:flex';
+    }
+    function stopVideo() {
+        player.stopVideo();
+        document.getElementById("pause").style = 'display:none';
+        document.getElementById("play").style = 'display:flex';
+    }
 </script>
 </html>

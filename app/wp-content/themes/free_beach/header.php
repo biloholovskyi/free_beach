@@ -21,9 +21,108 @@
                     <div class="right_header">
                         <a class="header_item" href="#">О проекте</a>
                         <a class="header_item" href="#">Документация</a>
-                        <a class="header_item" href="#">Поддержать проект</a>
+                      <?php
+                      $args = array(
+                        'numberposts' => -1, // если -1 то выводит все
+                        'orderby' => 'date',
+                        'order' => 'DESC',
+                        'post_type' => 'supports', // тип поста
+                        'suppress_filters' => true,
+                      );
+
+                      $posts = get_posts($args);
+
+                      foreach ($posts as $post) {
+                        setup_postdata($post);
+                        ?>
+                          <a class="header_item" href="<?php the_field('projects'); ?>" target="_blank">Поддержать проект</a>
+                        <?php
+                      }
+                      wp_reset_postdata(); // сброс
+                      ?>
                     </div>
                     <img class="burger" src="<?php echo get_template_directory_uri() . '/media/icon/burger.svg'; ?>" alt="icon" >
+                </div>
+                <div class="header_mobile">
+                    <div class="mobile_cat">
+                          <?php
+                          $args = array(
+                            'numberposts' => -1, // если -1 то выводит все
+                            'orderby' => 'date',
+                            'order' => 'DESC',
+                            'post_type' => 'category', // тип поста
+                            'suppress_filters' => true,
+                          );
+
+                          $posts = get_posts($args);
+
+                          foreach ($posts as $post) {
+                            setup_postdata($post);
+                            ?>
+                              <a href="<?php the_permalink(); ?>" id="<?php the_ID(); ?>"
+                                 class="category_item">#<?php the_title(); ?></a>
+                            <?php
+                          }
+                          wp_reset_postdata(); // сброс
+                          ?>
+                    </div>
+                    <div class="bottom_mobile">
+                        <a class="header_item" href="#">О проекте</a>
+                        <a class="header_item" href="#">Документация</a>
+                      <?php
+                      $args = array(
+                        'numberposts' => -1, // если -1 то выводит все
+                        'orderby' => 'date',
+                        'order' => 'DESC',
+                        'post_type' => 'supports', // тип поста
+                        'suppress_filters' => true,
+                      );
+
+                      $posts = get_posts($args);
+
+                      foreach ($posts as $post) {
+                      setup_postdata($post);
+                      ?>
+                        <a class="header_item" href="<?php the_field('projects'); ?>" target="_blank">Поддержать проект</a>
+                        <?php
+                      }
+                      wp_reset_postdata(); // сброс
+                      ?>
+                    </div>
+                    <div class="social_icons">
+                      <?php
+                      $args = array(
+                        'numberposts' => -1, // если -1 то выводит все
+                        'orderby' => 'date',
+                        'order' => 'DESC',
+                        'post_type' => 'social', // тип поста
+                        'suppress_filters' => true,
+                      );
+
+                      $posts = get_posts($args);
+
+                      foreach ($posts as $post) {
+                        setup_postdata($post);
+                        ?>
+                          <a href="<?php the_field('telegram'); ?>" target="_blank" class="icon">
+                              <img src="<?php echo get_template_directory_uri() . '/media/icon/telegram.svg'; ?>"
+                                   alt="icon"/>
+                          </a>
+                          <a href="<?php the_field('whatsapp'); ?>"  target="_blank" class="icon">
+                              <img src="<?php echo get_template_directory_uri() . '/media/icon/app.svg'; ?>" alt="icon"/>
+                          </a>
+                          <a href="<?php the_field('vk'); ?>"  target="_blank" class="icon">
+                              <img src="<?php echo get_template_directory_uri() . '/media/icon/vk.svg'; ?>" alt="icon"/>
+                          </a>
+                          <a href="<?php the_field('instagram'); ?>"  target="_blank" class="icon">
+                              <img src="<?php echo get_template_directory_uri() . '/media/icon/insta.svg'; ?>"
+                                   alt="icon"/>
+                          </a>
+                        <?php
+                      }
+                      wp_reset_postdata(); // сброс
+                      ?>
+                    </div>
                 </div>
             </div>
         </div>

@@ -36,6 +36,7 @@
   display: flex;
   align-items: center;
   padding: 20px 0;
+  position: relative;
   h4 {
     font-family: Neue Haas Unica R;
     font-style: normal;
@@ -68,6 +69,49 @@
     & img.active {
       transform: rotate(180deg);
     }
+  }
+
+  @keyframes opacity {
+    0%   {opacity: 0;}
+    50%  {opacity: 0.5;}
+    100% {opacity: 1;}
+  }
+
+  .filter__list {
+    background: #FFFFFF;
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 1px;
+    min-width: 135px;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 44px;
+    left: 34px;
+    padding:8px 16px ;
+    z-index: 9;
+    animation-name: opacity;
+    animation-duration: .5s;
+    transition: .4s;
+    .filter__item {
+      font-family: Neue Haas Unica R;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: -0.005em;
+      color: #000000;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  & .filter__list.active {
+      display: flex;
+      opacity: 1;
   }
 }
 .main,
@@ -132,6 +176,7 @@
     text-align: center;
     padding: 0 18px;
     max-width: unset;
+    width: 100%;
     .category-title,
     .category-name,
     .cat-date {
