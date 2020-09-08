@@ -61,6 +61,14 @@
   display: none;
 }
 
+.close {
+  width: 24px;
+  height: 24px;
+  object-position: center;
+  object-fit: contain;
+  display: none;
+}
+
 //header mobile
 
 .header_mobile {
@@ -80,7 +88,7 @@
     border-bottom: 1px solid #000;
     border-top: 1px solid #000;
     .category_item {
-      font-family: Neue Machina Bold;
+      font-family: 'Neue Machina Bold';
       font-style: normal;
       font-weight: bold;
       font-size: 28px;
@@ -98,7 +106,7 @@
     display: flex;
     flex-direction: column;
     .header_item {
-      font-family: Neue Machina Bold;
+      font-family: 'Neue Machina Bold';
       font-style: normal;
       font-weight: bold;
       font-size: 28px;
@@ -109,7 +117,7 @@
       display: inline-block;
     }
     & .header_item:last-child {
-      font-family: Neue Haas Unica;
+      font-family: 'Neue Haas Unica';
       font-style: normal;
       font-weight: 500;
       font-size: 16px;

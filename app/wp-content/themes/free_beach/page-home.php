@@ -753,11 +753,11 @@ Template Name: Home
                 <div class="double">
                     <div class="subscribe__form input-wrapper">
                         <div class="placeholder">Имя</div>
-                        <input type="text"/>
+                        <input name="name" type="text" required/>
                     </div>
                     <div class="subscribe__form input-wrapper">
                         <div class="placeholder">Почта или телефон</div>
-                        <input type="text"/>
+                        <input name="tel" type="text" required/>
                     </div>
                 </div>
                 <div class="subscribe__form input-wrapper textarea">
@@ -766,7 +766,7 @@ Template Name: Home
                 </div>
                 <div style="margin-bottom: 32px" class="g-recaptcha"
                      data-sitekey="6LdzuccZAAAAAFPZg0YB4_WOxOoX5aSFHs7SKw-a"></div>
-                <input class="form_btn" type="submit" value="Отправить"/>
+                <input name="btn_form" class="form_btn" type="submit" value="Отправить"/>
             </form>
         </div>
     </div>

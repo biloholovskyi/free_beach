@@ -15,6 +15,14 @@ $(document).ready(() => {
     })
 
     $('.burger').on('click', function (){
+        $(this).hide();
+        $('.close').css('display', 'block');
+        $('.header_mobile').toggleClass('active');
+    });
+
+    $('.close').on('click', function (){
+        $(this).hide();
+        $('.burger').css('display', 'block');
         $('.header_mobile').toggleClass('active');
     });
 });
@@ -24,7 +32,7 @@ $(window).resize(function () {
 
 
 $(document).mouseup(function (e){
-    let div = $('.btn_filter, .filter__list');
+    let div = $('.btn_filter, .filter__list,.btn_filter img ');
     if(!div.is(e.target) && div.has(e.target).length === 0) {
         div.removeClass('active');
     }

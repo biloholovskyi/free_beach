@@ -55,10 +55,10 @@
             <div class="col-12 col-lg-3 col-md-4">
                 <div class="subscribe">
                     <h3>Подпишитесь на нашу рассылку</h3>
-                    <div class="subscribe__form input-wrapper">
+                    <form class="subscribe__form input-wrapper">
                         <div class="placeholder">Ваш Email</div>
-                        <input style="color: #fff" type="text"/>
-                    </div>
+                            <input style="color: #fff" type="text"/>
+                    </form>
                     <div class="social_icons">
                       <?php
                       $args = array(
@@ -99,6 +99,12 @@
         </div>
     </div>
 </footer>
+    <div class="alert-modal">
+        <div class="alert-modal__body">
+            <p>Спасибо!</p>
+            <p>Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время</p>
+        </div>
+    </div>
 </body>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"

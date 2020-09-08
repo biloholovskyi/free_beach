@@ -1,12 +1,10 @@
 <?php get_header(); ?>
 <?php //the_post(); ?>
 <?php
-$title = 'hello'; // заголовок
-$summary = '<?php the_excerpt(); ?>'; // анонс поста
-$url = 'https://misha.blog?p=1'; // ссылка на пост
-
-
-$image_url = 'http://free-beach/app/wp-content/uploads/2020/09/news5.png' // URL изображения
+    $title = get_the_title();
+    $summary = get_the_excerpt();
+    $url = get_permalink();
+    $image_url = get_the_post_thumbnail_url();
 ?>
   <div class="container">
     <div class="row news__title-row" style="margin: 36px 0 56px">
@@ -56,7 +54,7 @@ $image_url = 'http://free-beach/app/wp-content/uploads/2020/09/news5.png' // URL
             <a target="_parent"  href="http://www.facebook.com/sharer.php?s=100&p[url]=<?php echo urlencode( $url ); ?>&p[title]=<?php echo $title ?>&p[summary]=<?php echo $summary ?>&p[images][0]=<?php echo $image_url ?>" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" title="Поделиться ссылкой на Фейсбук" target="_parent">
               <img src="<?php echo get_template_directory_uri() . '/media/icon/face-color.svg'; ?>" alt="icon">
             </a>
-            <a href="#">
+            <a href="http://twitter.com/share?text=<?php echo $title ?> &url=<?php echo urlencode( $url ) ?>" title="Поделиться ссылкой в Твиттере" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=425'); return false" target="_parent">
               <img src="<?php echo get_template_directory_uri() . '/media/icon/twit-color.svg'; ?>" alt="icon">
             </a>
             <a href="#">

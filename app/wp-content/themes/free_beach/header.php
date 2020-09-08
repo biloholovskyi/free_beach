@@ -42,6 +42,7 @@
                       ?>
                     </div>
                     <img class="burger" src="<?php echo get_template_directory_uri() . '/media/icon/burger.svg'; ?>" alt="icon" >
+                    <img class="close" src="<?php echo get_template_directory_uri() . '/media/icon/close.svg'; ?>" alt="icon" >
                 </div>
                 <div class="header_mobile">
                     <div class="mobile_cat">
