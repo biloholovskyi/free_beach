@@ -57,19 +57,19 @@
     color: #000000;
     background-color: transparent;
     border: none;
-    &:before {
-      content: "";
-      background: url("../media/icon/arrow.svg");
-      width: 8px;
-      height: 8px;
-      position: absolute;
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      right: -16px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+    //&:before {
+    //  content: "";
+    //  background: url("../media/icon/arrow.svg");
+    //  width: 8px;
+    //  height: 8px;
+    //  position: absolute;
+    //  background-position: center;
+    //  background-size: contain;
+    //  background-repeat: no-repeat;
+    //  right: -16px;
+    //  top: 50%;
+    //  transform: translateY(-50%);
+    //}
     img {
       width: 8px;
       height: 8px;

@@ -13,11 +13,11 @@
         );
 
         $posts = get_posts($args);
-
+        $catID = get_the_ID();
         foreach ($posts as $post) {
           setup_postdata($post);
           ?>
-          <a href="<?php the_permalink(); ?>" class="category_item">#<?php the_title(); ?></a>
+          <a href="<?php the_permalink(); ?>"  class="category_item">#<?php the_title(); ?></a>
           <?php
         }
         wp_reset_postdata(); // сброс
@@ -39,15 +39,18 @@
     </div>
   </div>
 </div>
+<?php $count_posts = wp_count_posts();
+      $published_posts = $count_posts->publish;
+?>
 <div class="container">
   <div class="row">
     <div class="col-12">
       <div class="category-title">
         <h1>#<?php the_title(); ?></h1>
         <div class="cat-desc">
-          <p>123456 новостей</p>
+          <p><?php echo $published_posts; ?> новостей</p>
           <p style="margin: 0 8px">/</p>
-          <p>16 за последний месяц</p>
+          <p>0 за последний месяц</p>
         </div>
       </div>
     </div>

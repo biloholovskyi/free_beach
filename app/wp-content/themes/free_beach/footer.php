@@ -106,14 +106,39 @@
         </div>
     </div>
 </body>
+
+<?php
+if(isset($_POST["btn_form"])){
+  if (isset($_POST['g-recaptcha-response'])) {
+    $url_to_google_api = "https://www.google.com/recaptcha/api/siteverify";
+    $secret_key = '6LdzuccZAAAAACUJXcu_-jg66o0NGecJg44pOZM7';
+    $query = $url_to_google_api . '?secret=' . $secret_key . '&response=' . $_POST['g-recaptcha-response'] . '&remoteip=' . $_SERVER['REMOTE_ADDR'];
+    $data = json_decode(file_get_contents($query));
+
+    if ($data->success) {
+      header('Location: page-home.php');
+    }
+    else {
+      echo('Вы не прошли валидацию reCaptcha');
+    }
+  }
+}
+?>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <?php wp_footer(); ?>
 <!--<script src="buildjs/index.js"></script>-->
 <script>
-    let onloadCallback = function () {
-        alert("grecaptcha is ready!");
+    let onSubmit = function(token) {
+        console.log('success!');
+    };
+
+    let onloadCallback = function() {
+        grecaptcha.render('submit', {
+            'sitekey' : '6LdzuccZAAAAAFPZg0YB4_WOxOoX5aSFHs7SKw-a',
+            'callback' : onSubmit
+        });
     };
 </script>
 <script>
