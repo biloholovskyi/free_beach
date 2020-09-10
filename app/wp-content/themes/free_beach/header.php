@@ -35,7 +35,7 @@
                       foreach ($posts as $post) {
                         setup_postdata($post);
                         ?>
-                          <a class="header_item" href="<?php the_field('projects'); ?>" target="_blank">Поддержать проект</a>
+                          <button class="header_item support_project" >Поддержать проект</button>
                         <?php
                       }
                       wp_reset_postdata(); // сброс
@@ -84,7 +84,7 @@
                       foreach ($posts as $post) {
                       setup_postdata($post);
                       ?>
-                        <a class="header_item" href="<?php the_field('projects'); ?>" target="_blank">Поддержать проект</a>
+                        <button class="header_item support_project" >Поддержать проект</button>
                         <?php
                       }
                       wp_reset_postdata(); // сброс
@@ -112,13 +112,13 @@
                           <a href="<?php the_field('whatsapp'); ?>"  target="_blank" class="icon">
                               <img src="<?php echo get_template_directory_uri() . '/media/icon/app.svg'; ?>" alt="icon"/>
                           </a>
-                          <a href="<?php the_field('vk'); ?>"  target="_blank" class="icon">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/vk.svg'; ?>" alt="icon"/>
-                          </a>
-                          <a href="<?php the_field('instagram'); ?>"  target="_blank" class="icon">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/insta.svg'; ?>"
-                                   alt="icon"/>
-                          </a>
+<!--                          <a href="--><?php //the_field('vk'); ?><!--"  target="_blank" class="icon">-->
+<!--                              <img src="--><?php //echo get_template_directory_uri() . '/media/icon/vk.svg'; ?><!--" alt="icon"/>-->
+<!--                          </a>-->
+<!--                          <a href="--><?php //the_field('instagram'); ?><!--"  target="_blank" class="icon">-->
+<!--                              <img src="--><?php //echo get_template_directory_uri() . '/media/icon/insta.svg'; ?><!--"-->
+<!--                                   alt="icon"/>-->
+<!--                          </a>-->
                         <?php
                       }
                       wp_reset_postdata(); // сброс

@@ -22,7 +22,7 @@
                           foreach ($posts as $post) {
                             setup_postdata($post);
                             ?>
-                              <a class="header_item" href="<?php the_field('projects'); ?>" target="_blank">Поддержать проект</a>
+                              <button class="header_item support_project" >Поддержать проект</button>
                             <?php
                           }
                           wp_reset_postdata(); // сброс
@@ -48,7 +48,7 @@
                           wp_reset_postdata(); // сброс
                           ?>
                         </div>
-                        <div class="bottom">1998 - 2020 Свободный пляж</div>
+                        <div class="bottom">2020 Свободный пляж</div>
                     </div>
                 </div>
             </div>
@@ -81,19 +81,19 @@
                         <a href="<?php the_field('whatsapp'); ?>"  target="_blank" class="icon">
                             <img src="<?php echo get_template_directory_uri() . '/media/icon/app.svg'; ?>" alt="icon"/>
                         </a>
-                        <a href="<?php the_field('vk'); ?>"  target="_blank" class="icon">
-                            <img src="<?php echo get_template_directory_uri() . '/media/icon/vk.svg'; ?>" alt="icon"/>
-                        </a>
-                        <a href="<?php the_field('instagram'); ?>"  target="_blank" class="icon">
-                            <img src="<?php echo get_template_directory_uri() . '/media/icon/insta.svg'; ?>"
-                                 alt="icon"/>
-                        </a>
+<!--                        <a href="--><?php //the_field('vk'); ?><!--"  target="_blank" class="icon">-->
+<!--                            <img src="--><?php //echo get_template_directory_uri() . '/media/icon/vk.svg'; ?><!--" alt="icon"/>-->
+<!--                        </a>-->
+<!--                        <a href="--><?php //the_field('instagram'); ?><!--"  target="_blank" class="icon">-->
+<!--                            <img src="--><?php //echo get_template_directory_uri() . '/media/icon/insta.svg'; ?><!--"-->
+<!--                                 alt="icon"/>-->
+<!--                        </a>-->
                         <?php
                       }
                       wp_reset_postdata(); // сброс
                       ?>
                     </div>
-                    <div class="hidden">1998 - 2020 Свободный пляж</div>
+                    <div class="hidden">2020 Свободный пляж</div>
                 </div>
             </div>
         </div>
@@ -103,6 +103,25 @@
         <div class="alert-modal__body">
             <p>Спасибо!</p>
             <p>Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время</p>
+        </div>
+    </div>
+    <div class="support_modal--overlay">
+        <div class="support_modal">
+            <div class="support-close">
+                <div class="close-item"></div>
+                <div class="close-item"></div>
+            </div>
+            <h2>Вы можете поддержать<br>наш проект пожертвованием</h2>
+            <div class="supp-price">
+                <button class="price">100р</button>
+                <button class="price">200р</button>
+                <button class="price">500р</button>
+            </div>
+            <div class="tap_price">
+                <label>Или введите вашу сумму</label>
+                <input type="text" name="price" placeholder="Вести сумму"/>
+            </div>
+            <button class="supp_btn">отправить</button>
         </div>
     </div>
 </body>

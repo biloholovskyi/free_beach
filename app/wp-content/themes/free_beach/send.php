@@ -17,7 +17,7 @@ foreach ($arr as $key => $value) {
 }
 
 $multiple_to_recipients = array(
-  'Dychkevych.kolya@gmail.com'
+  'SPSukko@yandex.ru'
 );
 
  wp_mail($multiple_to_recipients, "Новая заявка", "Имя: ".$name." | Номер: ".$tel." | Коментарий: ".$text);

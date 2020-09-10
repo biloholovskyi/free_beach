@@ -19,15 +19,15 @@
         <div class="news__social-hidden">
           <div class="date">24 Июля, 20:22</div>
           <div class="social__items">
-            <a href="#">
+              <a target="_parent"  href="http://www.facebook.com/sharer.php?s=100&p[url]=<?php echo urlencode( $url ); ?>&p[title]=<?php echo $title ?>&p[summary]=<?php echo $summary ?>&p[images][0]=<?php echo $image_url ?>" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" title="Поделиться ссылкой на Фейсбук" target="_parent">
               <img src="<?php echo get_template_directory_uri() . '/media/icon/face-color.svg'; ?>" alt="icon">
-            </a>
-            <a href="#">
-              <img src="<?php echo get_template_directory_uri() . '/media/icon/twit-color.svg'; ?>" alt="icon">
-            </a>
-            <a href="#">
-              <img src="<?php echo get_template_directory_uri() . '/media/icon/in.svg'; ?>" alt="icon">
-            </a>
+              </a>
+              <a href="http://twitter.com/share?text=<?php echo $title ?> &url=<?php echo urlencode( $url ) ?>" title="Поделиться ссылкой в Твиттере" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=425'); return false" target="_parent">
+                  <img src="<?php echo get_template_directory_uri() . '/media/icon/twit-color.svg'; ?>" alt="icon">
+              </a>
+              <a href="http://vkontakte.ru/share.php?url=<?php echo urlencode($url); ?>&title=<?php echo $title; ?>&description=<?php echo $description; ?>&image=<?php echo $image_url; ?>&noparse=true" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" title="Сохранить в Вконтакте" target="_parent">
+                  <img src="<?php echo get_template_directory_uri() . '/media/icon/vkont.png'; ?>" alt="icon">
+              </a>
           </div>
         </div>
       </div>
@@ -57,8 +57,8 @@
             <a href="http://twitter.com/share?text=<?php echo $title ?> &url=<?php echo urlencode( $url ) ?>" title="Поделиться ссылкой в Твиттере" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=425'); return false" target="_parent">
               <img src="<?php echo get_template_directory_uri() . '/media/icon/twit-color.svg'; ?>" alt="icon">
             </a>
-            <a href="#">
-              <img src="<?php echo get_template_directory_uri() . '/media/icon/in.svg'; ?>" alt="icon">
+            <a href="http://vkontakte.ru/share.php?url=<?php echo urlencode($url); ?>&title=<?php echo $title; ?>&description=<?php echo $description; ?>&image=<?php echo $image_url; ?>&noparse=true" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" title="Сохранить в Вконтакте" target="_parent">
+              <img src="<?php echo get_template_directory_uri() . '/media/icon/vkont.png'; ?>" alt="icon">
             </a>
           </div>
         </div>

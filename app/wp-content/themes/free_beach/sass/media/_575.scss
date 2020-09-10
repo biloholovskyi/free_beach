@@ -17,7 +17,7 @@
     .category_item {
       min-width: 94px;
       text-align: left;
-      margin-right: 10px;
+      margin: 0 5px;
     }
   }
   .filter {
@@ -114,7 +114,7 @@
     .subscribe {
       .social_icons {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
       }
     }
@@ -179,7 +179,7 @@
       }
     }
     .social_icons {
-      justify-content: space-between;
+      justify-content: space-around;
       a {
         img {
           margin-right: 0;
