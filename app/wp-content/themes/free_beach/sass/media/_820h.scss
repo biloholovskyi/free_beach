@@ -1,3 +1,11 @@
-@media screen and (max-height: 815px) {
-  
+@media screen and (max-height: 450px) {
+  .support_modal--overlay {
+    .support_modal {
+      min-height: 320px!important;
+      .supp-price {
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+      }
+    }
+  }
 }

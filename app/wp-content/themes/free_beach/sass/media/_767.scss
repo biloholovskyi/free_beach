@@ -56,7 +56,7 @@
     }
   }
   .hidden {
-    font-family: Neue Haas Unica R;
+    font-family: 'Neue Haas Unica R';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -88,7 +88,7 @@
       }
     }
     .date {
-      font-family: Neue Haas Unica;
+      font-family: 'Neue Haas Unica';
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -110,5 +110,11 @@
   }
   .alert-modal__body p {
     font-size: 20px;
+  }
+  .support_modal--overlay {
+    .support_modal {
+      min-width: 500px;
+      min-height: 390px;
+    }
   }
 }
