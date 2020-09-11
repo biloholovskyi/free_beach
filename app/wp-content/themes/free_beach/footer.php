@@ -143,22 +143,18 @@ if(isset($_POST["btn_form"])){
   }
 }
 ?>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <?php wp_footer(); ?>
 <!--<script src="buildjs/index.js"></script>-->
-<script>
-    let onSubmit = function(token) {
-        console.log('success!');
-    };
-
-    let onloadCallback = function() {
-        grecaptcha.render('submit', {
-            'sitekey' : '6LdzuccZAAAAAFPZg0YB4_WOxOoX5aSFHs7SKw-a',
-            'callback' : onSubmit
-        });
-    };
+<script type="text/javascript">
+  var onloadCallback = function() {
+    grecaptcha.render('html_element', {
+      'sitekey' : '6LdzuccZAAAAAFPZg0YB4_WOxOoX5aSFHs7SKw-a'
+    });
+  };
 </script>
 <script>
 
