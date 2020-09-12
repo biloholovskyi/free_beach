@@ -346,6 +346,9 @@
         line-height: 22px;
         margin-right: 2px;
         transition: transform .4s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       & .price:last-child {
@@ -359,11 +362,11 @@
         border-bottom-left-radius: 10px;
       }
 
-      & .price:hover {
-        transform: scale(1.1);
-        border: 1px solid #000;
-        z-index: 10;
-      }
+      //& .price:hover {
+      //  transform: scale(1.1);
+      //  border: 1px solid #000;
+      //  z-index: 10;
+      //}
       & .price.active {
         transform: scale(1.1);
         border: 1px solid #000;

@@ -113,9 +113,9 @@
             </div>
             <h2>Вы можете поддержать<br>наш проект пожертвованием</h2>
             <div class="supp-price">
-                <button class="price">100р</button>
-                <button class="price">200р</button>
-                <button class="price">500р</button>
+                <a href="#" class="price">100р</a>
+                <a href="#" class="price">200р</a>
+                <a href="#" class="price">500р</a>
             </div>
             <div class="tap_price">
                 <label>Или введите вашу сумму</label>
