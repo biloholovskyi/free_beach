@@ -4,26 +4,6 @@ Template Name: Home
 */
 ?>
 <?php get_header(); ?>
-<?php
-define('SITE_KEY', '6LdzuccZAAAAAFPZg0YB4_WOxOoX5aSFHs7SKw-a');
-define('SECRET_KEY', '6LdzuccZAAAAACUJXcu_-jg66o0NGecJg44pOZM7');
-
-if($_POST){
-  function getCaptcha($SecretKey){
-    $Response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".SECRET_KEY."&response={$SecretKey}");
-    $Return = json_decode($Response);
-    return $Return;
-  }
-  $Return = getCaptcha($_POST['g-recaptcha']);
-  //var_dump($Return);
-  if($Return->success == true && $Return->score > 0.5){
-    echo "Succes!";
-  }else{
-    echo "You are a Robot!!";
-  }
-}
-
-?>
 <div class="container" style="border-top: 1px solid #000;">
     <div class="row">
         <div class="col-12 col-lg-9 col-md-12">

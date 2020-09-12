@@ -76,473 +76,603 @@
       $catt = get_field('catt');
       if ( $post_id === $catt->ID) {
         $post_count++;
-      if ($post_count === 1) {
-        ?>
-          <!-- check if the news will have a video -->
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-7 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <a href="<?php the_permalink();?>" class="category-title" > <?php the_title(); ?> </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+        if ($post_count === 1) {
+          ?>
+            <!-- check if the news will have a video -->
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-7 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div date-time="<?php the_time('d.m.Y') ?>" class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-7 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title; ?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-7 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div date-time="<?php the_time('d.m.Y') ?>" class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php
-      } elseif($post_count === 2) {
-        ?>
-          <!-- check if the news will have a video -->
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-5 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title; ?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php
+        } elseif($post_count === 2) {
+          ?>
+            <!-- check if the news will have a video -->
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-5 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div date-time="<?php the_time('d.m.Y') ?>" class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-5 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
-      } elseif($post_count === 3) {
-        ?>
-          <!-- check if the news will have a video -->
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-5 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div date-time="<?php the_time('d.m.Y') ?>" class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count === 3) {
+          ?>
+            <!-- check if the news will have a video -->
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
-      } elseif($post_count === 4) {
-        ?>
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-8 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count === 4) {
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-8 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-8 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
-      } elseif($post_count === 5) {
-        ?>
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-8 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count === 5) {
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
-      } elseif($post_count === 6) {
-        ?>
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count === 6) {
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
-      } elseif($post_count === 7) {
-        ?>
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count === 7) {
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
-      } elseif($post_count === 8) {
-        ?>
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-7 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo get_the_category()[0]->name; ?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count === 8) {
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-7 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-7 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
-      } elseif($post_count === 9) {
-        ?>
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-5 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-7 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count === 9) {
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-5 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-5 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
-      } elseif($post_count === 10) {
-        ?>
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-5 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count === 10) {
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
-      } elseif($post_count === 11) {
-        ?>
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count === 11) {
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
-      } elseif($post_count === 12) {
-        ?>
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count === 12) {
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
-      } elseif($post_count === 13) {
-        ?>
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count === 13) {
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
-      } else {
-        $post_count = 0;
-        ?>
-        <?php if( get_field('video') === false ): ?>
-              <div class="col-12 col-lg-8 col-md-6 col-sm-6 news_col">
-                  <div class="main">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item small-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <a href="<?php the_permalink(); ?>" class="category-title"><?php the_title(); ?></a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count === 14) {
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-8 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
 
-        <?php if( get_field('video') === true ): ?>
-              <div class="col-12 col-lg-8 col-md-6 col-sm-6 news_col">
-                  <div class="main video-wrapp">
-                      <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
-                           alt="image">
-                      <div class="news-item">
-                          <div class="category-name">#<?php echo $catt->post_title;?></div>
-                          <div class="category-title"><?php the_title(); ?></div>
-                          <a href="<?php the_permalink(); ?>">
-                              <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
-                          </a>
-                          <div class="cat-date"><?php the_time('d.m.Y') ?></div>
-                      </div>
-                  </div>
-              </div>
-        <?php endif; ?>
-        <?php
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-8 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } elseif($post_count >= 15) {
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col news_visible">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-6 news_col news_visible">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
+        } else {
+          $post_count = 0;
+          ?>
+          <?php if( get_field('video') === false ): ?>
+                <div class="col-12 col-lg-5 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div  class="main">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item small-item">
+                                <div class="category-name">#<?php echo $catt->post_title;?></div>
+                                <div class="category-title" ><?php the_title(); ?></div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+
+          <?php if( get_field('video') === true ): ?>
+                <div class="col-12 col-lg-5 col-md-6 col-sm-6 news_col">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="main video-wrapp">
+                            <img class="news-img" src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                 alt="image">
+                            <div class="news-item">
+                                <div class="category-name">#<?php echo $catt->post_title; ?></div>
+                                <div class="category-title"><?php the_title(); ?></div>
+                                <div class="img-container">
+                                    <img src="<?php echo get_template_directory_uri() . '/media/icon/play.svg'; ?>" alt="image">
+                                </div>
+                                <div class="cat-date"><?php the_time('d.m.Y') ?></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+          <?php endif; ?>
+          <?php
         }
       }
     }

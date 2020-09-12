@@ -1,7 +1,7 @@
 $('#form').on('submit', function (e) {
     e.preventDefault();
     $.ajax({
-        url: './wp-content/themes/free_beach/send.php',
+        url: '/wp-content/themes/free_beach/send.php',
         type: 'POST',
         data: $(this).serialize(),
         success: function (data) {
