@@ -709,8 +709,7 @@
           <div class="placeholder textPlacehold">Коментарий</div>
           <textarea maxlength="380"></textarea>
         </div>
-        <div style="margin-bottom: 32px" class="g-recaptcha"
-             data-sitekey="6LdzuccZAAAAAFPZg0YB4_WOxOoX5aSFHs7SKw-a"></div>
+          <div style="margin-bottom: 32px" id="html_element" class="g-recaptcha" data-callback="onSubmit" data-sitekey="6LdzuccZAAAAAFPZg0YB4_WOxOoX5aSFHs7SKw-a"></div>
         <input class="form_btn" type="submit" value="Отправить"/>
       </form>
     </div>
