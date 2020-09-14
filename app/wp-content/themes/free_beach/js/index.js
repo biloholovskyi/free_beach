@@ -4,7 +4,6 @@ import "./scrolled";
 import "./form";
 import "./filter";
 
-
 $(document).ready(() => {
 
   $('input, textarea').on('input', inputForm);
@@ -14,6 +13,7 @@ $(document).ready(() => {
     $(this).parent('.filter').children('.filter__list').toggleClass('active');
   })
 
+  // open burger menu
   $('.burger').on('click', function () {
     $(this).hide();
     $('.close').css('display', 'block');
@@ -25,12 +25,14 @@ $(document).ready(() => {
     $('.burger').css('display', 'block');
     $('.header_mobile').toggleClass('active');
   });
+  // end burger menu
 
   $('.more').on('click', function (){
     $(this).hide();
     $('.news_visible').addClass('active');
   });
 
+  // open modal for support project
   $('.support_project').on('click', function (){
       $('.support_modal--overlay').css('display', 'flex');
       $('body').addClass('active');
@@ -40,16 +42,12 @@ $(document).ready(() => {
     $('.support_modal--overlay').css('display', 'none');
     $('body').removeClass('active');
   });
-
-  $('.supp-price .price').on('click', function (){
-      $(this).addClass('active').siblings().removeClass('active');
-  });
+//end support modal
 
 });
 $(window).resize(function () {
 
 });
-
 
 $(document).mouseup(function (e) {
   let div = $('.btn_filter, .filter__list,.btn_filter img ');
