@@ -27,10 +27,8 @@ const webConfig = {
 
 gulp.task('default', function() {
   browserSync.init({
-    server: {
-        baseDir: "./app/wp-content/themes/free_beach"
-    }
-});
+    proxy: "http://localhost:8888/free_beach/app"
+  });
     gulp.watch("app/wp-content/themes/free_beach/sass/**/*.scss", function () {
         return gulp.src("app/wp-content/themes/free_beach/sass/**/*.scss")
           .pipe(sass())

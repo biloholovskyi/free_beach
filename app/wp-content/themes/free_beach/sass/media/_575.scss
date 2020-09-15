@@ -1,8 +1,10 @@
 @media screen and (max-width: 575px) {
   .main_header {
     min-height: 72px;
+
     .header {
       min-height: 72px;
+
       .logo {
         font-size: 18px;
         line-height: 24px;
@@ -14,10 +16,12 @@
   }
   .category {
     padding-bottom: 20px;
+
     .category_item {
       min-width: max-content;
       text-align: left;
       margin: 0 5px;
+
       &:after {
         position: static;
         padding: 0 10px;
@@ -26,11 +30,14 @@
   }
   .filter {
     padding: 9px 0;
+
     h4 {
       display: none;
     }
+
     .filter__list {
       top: 38px;
+
       .filter__item {
         font-size: 14px;
         line-height: 22px;
@@ -40,9 +47,11 @@
   }
   .main {
     min-height: 328px;
+
     .news-item {
       padding: 16px 16px 0 0;
-      max-width: 304px!important;
+      max-width: 304px !important;
+
       .category-title {
         font-size: 18px;
         line-height: 24px;
@@ -55,9 +64,11 @@
   }
   .video-wrapp {
     max-height: 328px;
+
     .news-item {
       padding: 0 16px 0;
-      max-width: 100%!important;
+      max-width: 100% !important;
+
       a {
         margin: 24px 0;
       }
@@ -66,24 +77,29 @@
   .btn-wrapp {
     margin: 32px 0 40px;
     padding-bottom: 48px;
+
     .more {
       width: 100%;
     }
   }
   .main_form {
     margin-bottom: 40px;
+
     .double {
       flex-direction: column;
       margin-bottom: 0;
+
       .subscribe__form {
         margin-right: 0;
         margin-bottom: 24px;
       }
     }
+
     .textarea {
-      min-height: 82px!important;
+      min-height: 82px !important;
       margin-bottom: 32px;
     }
+
     .form_btn {
       max-width: 100%;
       margin: 0;
@@ -100,13 +116,16 @@
       font-size: 18px;
       line-height: 24px;
     }
+
     .footer__items {
       .footer_navigation {
         border-bottom: 1px solid #fff;
         padding-bottom: 24px;
         margin-bottom: 24px;
+
         .top {
           flex-wrap: wrap;
+
           a {
             font-size: 14px;
             line-height: 20px;
@@ -115,6 +134,7 @@
         }
       }
     }
+
     .subscribe {
       .social_icons {
         display: flex;
@@ -128,6 +148,7 @@
   }
   .category-title {
     margin-bottom: 24px;
+
     h1 {
       font-size: 28px;
       line-height: 32px;
@@ -175,17 +196,25 @@
     min-height: 350px;
   }
   .header_mobile {
-    .bottom_mobile {
-      & .header_item:last-child {
+    .bottom_mobile-sticky {
+      .header_item {
         text-align: center;
         max-width: 100%;
-        padding: 16px 0px;
-        margin-top: 110px;
+        width: 100%;
+        padding: 16px 0;
       }
     }
+
     .social_icons {
-      justify-content: space-around;
+      justify-content: center;
+
       a {
+        margin-right: 64px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
         img {
           margin-right: 0;
         }
@@ -200,6 +229,7 @@
       min-width: 100%;
       min-height: 100%;
       border-radius: 0;
+
       h2 {
         font-size: 16px;
         line-height: 20px;

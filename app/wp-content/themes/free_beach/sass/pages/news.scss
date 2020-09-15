@@ -125,11 +125,11 @@
     background-image: url("../media/icon/arr_left.svg");
     background-position: center;
     background-size: contain;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);
+    margin-top: -12px;
   }
 }

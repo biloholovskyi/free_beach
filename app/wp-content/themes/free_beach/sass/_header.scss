@@ -117,7 +117,10 @@
       padding-bottom: 20px;
       display: inline-block;
     }
-    & .header_item:last-child {
+  }
+
+  .bottom_mobile-sticky {
+    .header_item {
       font-family: 'Neue Haas Unica';
       font-style: normal;
       font-weight: 500;
@@ -130,9 +133,10 @@
       border-radius: 100px;
       cursor: pointer;
       padding: 16px 70px;
-      margin-top: 22px;
       max-width: 330px;
       border: none;
+      margin-bottom: 22px;
+
     }
   }
   .social_icons {
@@ -153,8 +157,15 @@
   }
   &.active {
     transform: translateY(0%);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     visibility: visible;
     opacity: 1;
+    max-height: calc(100vh - 72px);
+    height: calc(100vh - 72px);
+    min-height: calc(100vh - 72px);
+    padding-bottom: 26px;
+    overflow: auto;
   }
 }

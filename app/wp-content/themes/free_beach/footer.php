@@ -113,9 +113,9 @@
             </div>
             <h2>Вы можете поддержать<br>наш проект пожертвованием</h2>
             <div class="supp-price">
-                <a href="#" class="price">100р</a>
-                <a href="#" class="price">200р</a>
-                <a href="#" class="price">500р</a>
+              <a href="<?php the_field('first_button-link'); ?>" target="_blank" class="price"><?php the_field('first_button-count'); ?></a>
+              <a href="<?php the_field('second_button-link'); ?>" target="_blank" class="price"><?php the_field('second_button-count'); ?></a>
+              <a href="<?php the_field('third_button-link'); ?>" target="_blank" class="price"><?php the_field('third_button-count'); ?></a>
             </div>
             <div class="tap_price">
                 <label>Или введите вашу сумму</label>
