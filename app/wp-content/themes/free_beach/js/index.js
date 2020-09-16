@@ -2,7 +2,9 @@ import 'normalize.css';
 import {inputForm} from "./input";
 import "./scrolled";
 import "./form";
-import "./filter";
+import Filter from './filter'
+//
+const filter = new Filter();
 
 $(document).ready(() => {
 
@@ -11,6 +13,10 @@ $(document).ready(() => {
   $('.btn_filter').on('click', function () {
     $(this).children('img').toggleClass('active');
     $(this).parent('.filter').children('.filter__list').toggleClass('active');
+  })
+
+  document.querySelectorAll('.filter .filter__list .filter__item').forEach(item => {
+    item.addEventListener('click', (e) => filter.addFilter(e));
   })
 
   // open burger menu
