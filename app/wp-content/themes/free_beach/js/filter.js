@@ -2,6 +2,8 @@ class Filter {
   addFilter (e) {
     const slug = e.currentTarget.innerHTML;
 
+    document.querySelector('.btn_filter span').innerHTML = slug;
+
     // current date
     const date = new Date();
     const year = date.getFullYear();
