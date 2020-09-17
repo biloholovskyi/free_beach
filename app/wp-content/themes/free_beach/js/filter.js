@@ -26,7 +26,10 @@ class Filter {
         this.week(articles, year, month, day);
         break
       case 'За месяц':
-        this.month(articles, year, month, day)
+        this.month(articles, year, month, day);
+        break
+      default:
+        this.year(articles, slug);
         break
     }
   }
@@ -74,6 +77,32 @@ class Filter {
         art.classList.add('filter_hidden');
       } else {
         art.classList.remove('filter_hidden');
+      }
+    })
+  }
+
+  year (articles, year) {
+    articles.forEach(art => {
+      const artDate = art.querySelector('.cat-date').innerHTML.split('.')[2];
+      if(artDate.toString() !== year.toString()) {
+        art.classList.add('filter_hidden');
+      } else {
+        art.classList.remove('filter_hidden');
+      }
+    });
+  }
+
+  getYears () {
+    const articles = document.querySelectorAll('.news_col');
+    let years = [];
+    articles.forEach(art => {
+      const year = art.querySelector('.cat-date').innerHTML.split('.')[2];
+      if(!years.includes(year)) {
+        years.push(year);
+        const div = document.createElement('div');
+        div.className = 'filter__item';
+        div.innerHTML = year;
+        document.querySelector('.filter .filter__list').append(div)
       }
     })
   }

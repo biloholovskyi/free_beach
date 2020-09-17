@@ -16,7 +16,7 @@ $(document).ready(() => {
     $(this).children('img').toggleClass('active');
     $(this).parent('.filter').children('.filter__list').toggleClass('active');
   })
-
+  filter.getYears();
   document.querySelectorAll('.filter .filter__list .filter__item').forEach(item => {
     item.addEventListener('click', (e) => filter.addFilter(e));
   })

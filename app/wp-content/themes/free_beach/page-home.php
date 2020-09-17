@@ -35,14 +35,9 @@ Template Name: Home
             <div class="filter">
                 <h4>Дата:</h4>
                 <button class="btn_filter"><span>За все время</span><img src="<?php echo get_template_directory_uri() . '/media/icon/arrow.svg'; ?>" alt="image"/>
-<!--                    <option value="1" class="filter__item">За все время</option>-->
-<!--                    <option value="2" class="filter__item">За сегодня</option>-->
-<!--                    <option value="3" class="filter__item">За неделю</option>-->
-<!--                    <option value="4" class="filter__item">За месяц</option>-->
                 </button>
                 <div class="filter__list">
                     <div class="filter__item">За все время</div>
-                    <div class="filter__item">За сегодня</div>
                     <div class="filter__item">За неделю</div>
                     <div class="filter__item">За месяц</div>
                 </div>
