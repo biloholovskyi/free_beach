@@ -119,9 +119,9 @@
             </div>
             <div class="tap_price">
                 <label>Или введите вашу сумму</label>
-                <input type="text" name="price" placeholder="Вести сумму"/>
+                <input type="number" name="price" placeholder="Вести сумму" id="custom-price"/>
             </div>
-            <button class="supp_btn">отправить</button>
+            <a href="https://money.yandex.ru/to/4100115795395476/" target="_blank" class="supp_btn" id="custom-price-link">отправить</a>
         </div>
     </div>
 </body>

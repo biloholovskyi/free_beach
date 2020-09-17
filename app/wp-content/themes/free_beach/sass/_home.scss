@@ -400,7 +400,7 @@
       }
       input {
         min-height: 40px;
-        font-family: 'Neue Haas Unica';
+        font-family: sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -409,6 +409,10 @@
         margin-bottom: 30px;
         border-radius: 10px;
         padding-left: 10px;
+
+        &::placeholder {
+          font-family: sans-serif;
+        }
       }
     }
     .supp_btn {

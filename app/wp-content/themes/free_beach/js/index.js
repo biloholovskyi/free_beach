@@ -3,11 +3,13 @@ import {inputForm} from "./input";
 import "./scrolled";
 import "./form";
 import Filter from './filter'
-//
+import Support from "./support";
+
 const filter = new Filter();
+const support = new Support();
 
 $(document).ready(() => {
-
+  document.getElementById('custom-price').addEventListener('input', support.input);
   $('input, textarea').on('input', inputForm);
 
   $('.btn_filter').on('click', function () {
