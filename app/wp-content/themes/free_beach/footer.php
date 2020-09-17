@@ -6,8 +6,8 @@
                     <h2>Свободный пляж</h2>
                     <div class="footer_navigation">
                         <div class="top">
-                            <a href="#">О проекте</a>
-                            <a href="#">Документация</a>
+<!--                            <a href="#">О проекте</a>-->
+<!--                            <a href="#">Документация</a>-->
                           <?php
                           $args = array(
                             'numberposts' => -1, // если -1 то выводит все
@@ -151,9 +151,13 @@ if(isset($_POST["btn_form"])){
 <!--<script src="buildjs/index.js"></script>-->
 <script type="text/javascript">
   var onloadCallback = function() {
-    grecaptcha.render('html_element', {
-      'sitekey' : '6LdzuccZAAAAAFPZg0YB4_WOxOoX5aSFHs7SKw-a'
-    });
+    try {
+      grecaptcha.render('html_element', {
+        'sitekey' : '6LdzuccZAAAAAFPZg0YB4_WOxOoX5aSFHs7SKw-a'
+      });
+    } catch (e) {
+
+    }
   };
 </script>
 <script>

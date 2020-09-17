@@ -94,6 +94,11 @@ class Filter {
 
   getYears () {
     const articles = document.querySelectorAll('.news_col');
+
+    if(!document.querySelector('.filter_col')) {
+      return
+    }
+
     let years = [];
     articles.forEach(art => {
       const year = art.querySelector('.cat-date').innerHTML.split('.')[2];
