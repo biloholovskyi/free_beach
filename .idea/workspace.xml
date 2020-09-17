@@ -19,12 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f839b5a-330b-4957-8ebe-e37fed073cf9" name="Default Changelist" comment="support payment">
+    <list default="true" id="4f839b5a-330b-4957-8ebe-e37fed073cf9" name="Default Changelist" comment="filter from years">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/buildjs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/buildjs/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/js/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/js/filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/page-home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/page-home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/_form.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,7 @@
       <workItem from="1599895379080" duration="605000" />
       <workItem from="1600007015353" duration="599000" />
       <workItem from="1600167131373" duration="660000" />
-      <workItem from="1600168005321" duration="9990000" />
+      <workItem from="1600168005321" duration="10394000" />
     </task>
     <task id="LOCAL-00001" summary="frond-end fix">
       <created>1600174068345</created>
@@ -91,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600326350526</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="filter from years">
+      <created>1600327231079</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600327231079</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +119,8 @@
     <MESSAGE value="Filter" />
     <MESSAGE value="Filter: fix switch slug text" />
     <MESSAGE value="support payment" />
-    <option name="LAST_COMMIT_MESSAGE" value="support payment" />
+    <MESSAGE value="filter from years" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter from years" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="468" key="#WordPress" timestamp="1599652189256">
@@ -136,15 +143,15 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="289" key="GridCell.Tab.0.right/-111.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1600167351904" />
-    <state x="440" y="243" key="Vcs.Push.Dialog.v2" timestamp="1600326352021">
+    <state x="440" y="243" key="Vcs.Push.Dialog.v2" timestamp="1600327232186">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="440" y="261" key="Vcs.Push.Dialog.v2/-111.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1600174077493" />
-    <state x="440" y="243" key="Vcs.Push.Dialog.v2/-111.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1600326352021" />
-    <state x="542" y="264" width="596" height="522" key="find.popup" timestamp="1600327051822">
+    <state x="440" y="243" key="Vcs.Push.Dialog.v2/-111.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1600327232186" />
+    <state x="542" y="264" width="596" height="522" key="find.popup" timestamp="1600328143556">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="542" y="264" width="596" height="522" key="find.popup/-111.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1600327051822" />
+    <state x="542" y="264" width="596" height="522" key="find.popup/-111.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1600328143556" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/app</wordpressPath>

@@ -26,6 +26,7 @@
       transform: translateY(-50%);
       transition: .3s;
       z-index: 1;
+      margin-top: 1px;
     }
     input,
     textarea {
@@ -55,7 +56,7 @@
     min-height: 126px!important;
     margin-bottom: 32px;
     .placeholder {
-      top: 22.5px;
+      top: 22px;
     }
     textarea {
       width: 100%;
