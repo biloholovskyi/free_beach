@@ -1,0 +1,75 @@
+.about-page {
+  .documentation-page__title {
+    font-family: 'Neue Machina Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: .001em;
+    color: #000;
+    margin: 0 0 40px;
+  }
+  h2 {
+    font-family: 'Neue Haas Unica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-family: 'Neue Haas Unica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+  p {
+    font-family: Neue Haas Unica R;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 25px;
+    max-width: 650px;
+  }
+  ul {
+    padding-left: 45px;
+    li {
+      font-family: Neue Haas Unica R;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000;
+      margin-bottom: 20px;
+    }
+  }
+  .blocks-gallery-grid {
+    padding-left: 0;
+    img {
+      width: 100%;
+      max-width: 800px;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+  .form_title {
+    font-family: Neue Machina Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: .001em;
+    color: #000;
+  }
+}

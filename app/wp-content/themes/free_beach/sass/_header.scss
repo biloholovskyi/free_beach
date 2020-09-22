@@ -18,6 +18,13 @@
      font-size: 28px;
      line-height: 36px;
 
+     img {
+       width: 200px;
+       height: 50px;
+       object-fit: contain;
+       object-position: center; 
+     }
+
    }
    .right_header {
       .header_item {

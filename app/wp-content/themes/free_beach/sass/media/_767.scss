@@ -35,7 +35,7 @@
   }
   .footer {
     padding: 24px 0;
-    h2 {
+    .logo {
       padding-bottom: 50px;
     }
     .footer__items {
@@ -115,6 +115,22 @@
     .support_modal {
       min-width: 500px;
       min-height: 390px;
+    }
+  }
+  .documentation-page__row {
+    -webkit-box-pack: center;
+    justify-content: center
+  }
+
+  .documentation-page__row .row__item {
+    width: calc(100% - 30px);
+    min-width: calc(100% - 30px)
+  }
+  .about-page {
+    .form_title {
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 32px;
     }
   }
 }

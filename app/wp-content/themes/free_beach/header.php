@@ -17,10 +17,12 @@
     <div class="row">
       <div class="col-12">
         <div class="header">
-          <a class="logo" href="/">Свободный пляж</a>
+          <a class="logo" href="/">
+            <img src="<?php echo get_template_directory_uri() . '/media/icon/logo-hor.svg'; ?>" alt="logo"/>
+          </a>
           <div class="right_header">
-            <a class="header_item" href="#">О проекте</a>
-            <a class="header_item" href="#">Документация</a>
+            <a class="header_item" href="/about">О проекте</a>
+            <a class="header_item" href="/documents">Документация</a>
 			  <?php
 			  $args = array(
 				  'numberposts'      => - 1, // если -1 то выводит все
@@ -69,8 +71,8 @@
 	            ?>
             </div>
             <div class="bottom_mobile">
-              <a class="header_item" href="#">О проекте</a>
-              <a class="header_item" href="#">Документация</a>
+              <a class="header_item" href="/about">О проекте</a>
+              <a class="header_item" href="/documents">Документация</a>
             </div>
           </div>
           <div class="header_bottom-bottom">

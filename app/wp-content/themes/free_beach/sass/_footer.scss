@@ -3,14 +3,20 @@
   padding: 28px 0;
   width: 100%;
   min-height: 255px;
-  h2 {
+  .logo {
+    font-family: 'Neue Machina Bold';
     font-style: normal;
     font-weight: 900;
     font-size: 28px;
     line-height: 36px;
-    color: #FFFFFF;
     padding-bottom: 105px;
-    font-family: 'Neue Machina Bold';
+    img {
+      width: 200px;
+      height: 50px;
+      object-fit: contain;
+      object-position: center;
+    }
+
   }
   .footer__items {
     display: flex;

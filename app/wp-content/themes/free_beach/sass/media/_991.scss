@@ -65,9 +65,11 @@
     .footer__items {
       .footer_navigation {
         .top {
-          a {
+          flex-wrap: wrap;
+          a,button {
             margin-right: 10px;
             font-size: 14px;
+            margin-bottom: 16px;
           }
 
           .support_project {
@@ -101,6 +103,16 @@
   }
   .wrap {
     min-height: 500px;
+  }
+  .documentation-page__row .row__item {
+    width: calc(100% / 2 - 17px);
+    min-width: calc(100% / 2 - 17px)
+  }
+  .about-page {
+    .form_title {
+      font-size: 40px;
+      line-height: 50px;
+    }
   }
 }
 

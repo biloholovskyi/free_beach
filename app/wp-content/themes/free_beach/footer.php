@@ -3,11 +3,13 @@
         <div class="row">
             <div class="col-12 col-lg-9 col-md-8">
                 <div class="footer__items">
-                    <h2>Свободный пляж</h2>
+                    <a class="logo" href="/">
+                      <img src="<?php echo get_template_directory_uri() . '/media/icon/logo-hor.svg'; ?>" alt="logo"/>
+                    </a>
                     <div class="footer_navigation">
                         <div class="top">
-<!--                            <a href="#">О проекте</a>-->
-<!--                            <a href="#">Документация</a>-->
+                            <a href="/about">О проекте</a>
+                            <a href="/documents">Документация</a>
                           <?php
                           $args = array(
                             'numberposts' => -1, // если -1 то выводит все
