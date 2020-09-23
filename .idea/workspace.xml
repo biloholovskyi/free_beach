@@ -28,11 +28,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4f839b5a-330b-4957-8ebe-e37fed073cf9" name="Default Changelist" comment="Small fix: font in footer, hidden some page, fix bag captcha in articles page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/albertgai9_free.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/albertgai9_free.sql.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-free-beach-app-1599258956.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/free-18-48.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/last_bd.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wp-content/backupwordpress-5f44475ff4-backups/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/backupwordpress-5f44475ff4-backups/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/media/_575.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/media/_575.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/pages/document.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/pages/document.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,17 +44,29 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hGzL94NtWqXHbRtNzQzbDQTmkN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -69,8 +83,10 @@
       <workItem from="1599895379080" duration="605000" />
       <workItem from="1600007015353" duration="599000" />
       <workItem from="1600167131373" duration="660000" />
-      <workItem from="1600168005321" duration="11649000" />
-      <workItem from="1600793324218" duration="204000" />
+      <workItem from="1600168005321" duration="11456000" />
+      <workItem from="1600763567436" duration="2156000" />
+      <workItem from="1600765823598" duration="11098000" />
+      <workItem from="1600844041431" duration="2569000" />
     </task>
     <task id="LOCAL-00001" summary="frond-end fix">
       <created>1600174068345</created>
@@ -152,6 +168,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="frond-end fix" />
     <MESSAGE value="Filter" />
     <MESSAGE value="Filter: fix switch slug text" />
@@ -182,7 +199,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="289" key="GridCell.Tab.0.right/-111.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1600167351904" />
-    <state x="440" y="243" key="Vcs.Push.Dialog.v2" timestamp="1600342712443">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1600770325269">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600770325269" />
+    <state x="440" y="243" key="Vcs.Push.Dialog.v2" timestamp="1600328270047">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="440" y="261" key="Vcs.Push.Dialog.v2/-111.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1600174077493" />

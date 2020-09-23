@@ -142,8 +142,8 @@
   }
   .news-item {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: -1px;
+    left: 0px;
     max-width: 426px;
     min-height: 176px;
     background-color: white;
@@ -326,7 +326,7 @@
       }
     }
     h2 {
-      font-family: Neue Machina Bold;
+      font-family: 'Neue Machina Bold';
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
@@ -416,7 +416,7 @@
       }
     }
     .supp_btn {
-      font-family: Neue Haas Unica;
+      font-family: 'Neue Haas Unica';
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -429,7 +429,6 @@
       border-radius: 100px;
       border: none;
       max-width: 162px;
-      margin-right: au
     }
   }
 }
