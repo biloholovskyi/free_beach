@@ -20,7 +20,7 @@ get_header();
 	</div>
 </section>
 <div class="about-page">
-  <div class="container" style="border-top: 1px solid #000; padding-top: 50px; margin-top: 50px;">
+  <div class="container" style="padding-top: 50px;">
     <div class="row">
       <div class="col-12 col-lg-6 col-md-6 col-sm-12">
         <p class="form_title">Есть вопросы или<br>предложения?<br>
