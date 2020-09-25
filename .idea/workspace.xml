@@ -26,15 +26,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f839b5a-330b-4957-8ebe-e37fed073cf9" name="Default Changelist" comment="Small fix: font in footer, hidden some page, fix bag captcha in articles page">
+    <list default="true" id="4f839b5a-330b-4957-8ebe-e37fed073cf9" name="Default Changelist" comment="marge">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wp-content/backupwordpress-5f44475ff4-backups/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/backupwordpress-5f44475ff4-backups/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/_home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/media/_575.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/media/_575.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/pages/document.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/sass/pages/document.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/wp-content/themes/free_beach/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/wp-content/themes/free_beach/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +61,11 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -87,6 +87,8 @@
       <workItem from="1600763567436" duration="2156000" />
       <workItem from="1600765823598" duration="11098000" />
       <workItem from="1600844041431" duration="2569000" />
+      <workItem from="1600965612467" duration="315000" />
+      <workItem from="1600966048156" duration="858000" />
     </task>
     <task id="LOCAL-00001" summary="frond-end fix">
       <created>1600174068345</created>
@@ -137,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600342707658</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="marge">
+      <created>1600857972096</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600857972096</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,13 +185,22 @@
     <MESSAGE value="filter from years" />
     <MESSAGE value="Fix input placeholder position" />
     <MESSAGE value="Small fix: font in footer, hidden some page, fix bag captcha in articles page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fix: font in footer, hidden some page, fix bag captcha in articles page" />
+    <MESSAGE value="marge" />
+    <option name="LAST_COMMIT_MESSAGE" value="marge" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="440" y="173" key="#Plugins" timestamp="1600966064126">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="173" key="#Plugins/-111.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1600966064126" />
     <state x="452" y="468" key="#WordPress" timestamp="1599652189256">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="452" y="468" key="#WordPress/-111.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599652189256" />
+    <state x="528" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600966007581">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="528" y="268" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-111.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1600966007581" />
     <state width="1638" height="289" key="GridCell.Tab.0.bottom" timestamp="1600167351905">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

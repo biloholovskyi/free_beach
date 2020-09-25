@@ -115,9 +115,27 @@
             </div>
             <h2>Вы можете поддержать<br>наш проект пожертвованием</h2>
             <div class="supp-price">
-              <a href="<?php the_field('first_button-link'); ?>" target="_blank" class="price"><?php the_field('first_button-count'); ?></a>
-              <a href="<?php the_field('second_button-link'); ?>" target="_blank" class="price"><?php the_field('second_button-count'); ?></a>
-              <a href="<?php the_field('third_button-link'); ?>" target="_blank" class="price"><?php the_field('third_button-count'); ?></a>
+	            <?php
+	            $args = array(
+		            'numberposts' => 1, // если -1 то выводит все
+		            'orderby' => 'date',
+		            'order' => 'DESC',
+		            'post_type' => 'Support', // тип поста
+		            'suppress_filters' => true,
+	            );
+
+	            $posts = get_posts($args);
+
+	            foreach ($posts as $post) {
+		            setup_postdata($post);
+		            ?>
+                <a href="<?php the_field('first_button-link'); ?>" target="_blank" class="price"><?php the_field('first_button-count'); ?></a>
+                <a href="<?php the_field('second_button-link'); ?>" target="_blank" class="price"><?php the_field('second_button-count'); ?></a>
+                <a href="<?php the_field('third_button-link'); ?>" target="_blank" class="price"><?php the_field('third_button-count'); ?></a>
+		            <?php
+	            }
+	            wp_reset_postdata(); // сброс
+	            ?>
             </div>
             <div class="tap_price">
                 <label>Или введите вашу сумму</label>
